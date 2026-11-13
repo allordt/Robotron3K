@@ -1,14 +1,15 @@
 --! file: main.lua
 
 function love.load()
--- there's a way to configure sections within the window: (1) Top Bar - Info and (2) Main
--- love.graphics.setScissor() -> next 
+    player = {x = 50, y = 50, speed = 10}
 end
 
 function love.update(dt)
-
+    if love.keyboard.isDown("left") then
+        player.x = player.x - player.speed * dt
+    end
 end
 
 function love.draw()
-    love.graphics.rectangle("line", 0, 0, 250, 250)
+    love.graphics.circle("fill", player.x, player.y, 10)
 end
