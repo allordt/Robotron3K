@@ -1,7 +1,6 @@
 --! file: main.lua
 
 function love.load()
--- add configuration of window 
 -- there's a way to configure sections within the window: (1) Top Bar - Info and (2) Main
 -- love.graphics.setScissor() -> next 
 end
