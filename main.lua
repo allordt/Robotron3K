@@ -1,11 +1,11 @@
 --! file: main.lua
 
 function love.load()
-    player = {x = 50, y = 50, speed = 20}
+    player = { x = 50, y = 50, speed = 20 }
+    enemy = { x = 300, y = 200, speed = 15 }
 end
 
 function love.update(dt)
--- Test Comment
 -- Controls below
     if love.keyboard.isDown("a") then
         player.x = player.x - player.speed * dt
