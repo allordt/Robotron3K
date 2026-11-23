@@ -1,8 +1,8 @@
 --! file: main.lua
 
 function love.load()
-    player = { x = 50, y = 50, speed = 20 }
-    enemy = { x = 300, y = 200, speed = 15 }
+    player = {x = 50, y = 50, speed = 20}
+    enemy = {x = 300, y = 200, speed = 15}
     bullet = {player.x, player.y, speed = 50}
 end
 
