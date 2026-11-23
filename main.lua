@@ -5,7 +5,7 @@ function love.load()
 end
 
 function love.update(dt)
-
+-- Test Comment
 -- Controls below
     if love.keyboard.isDown("a") then
         player.x = player.x - player.speed * dt
